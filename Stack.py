@@ -1,3 +1,5 @@
+# LIFO / FILO
+
 class Stack:
     def __init__(self, size=100):
         if size < 1: size = 1
@@ -91,40 +93,3 @@ if balanced and balancer.is_empty():
     print('Parantheses are balanced.')
 else:
     print('Parantheses are NOT balanced.')
-
-
-#------BALANCED PARANTHESES USING PYTHON LIST------#
-# print('\n\n-----BALANCED PARANTHESES USING PYTHON LIST-----\n')
-
-# test2 = '{a+b}[c*(x/y*{a-b})] )'
-
-# balancer = []
-# balanced = True
-# for x in test2:
-#     if x == '(' or x == '[' or x == '{':
-#         balancer.append(x)
-#         #balancer.print_stack()
-#     elif x == ')':
-#         if len(balancer) > 0 and balancer[-1] == '(':
-#             balancer.pop()
-#         else:
-#             balanced = False
-#             break
-#     elif x == ']':
-#         if len(balancer) > 0 and balancer[-1] == '[':
-#             balancer.pop()
-#         else: 
-#             balanced = False
-#             break
-#     elif x == '}':
-#         if len(balancer) > 0 and balancer[-1] == '{':
-#             balancer.pop()
-#         else:
-#             balanced = False
-#             break
-
-# if balanced and len(balancer) == 0:
-#     print('Parantheses are balanced.')
-# else:
-#     print('Parantheses are NOT balanced.')
-    
