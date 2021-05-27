@@ -18,7 +18,7 @@ def is_balanced(exp):
             if len(balancer) > 0 and balancer[-1] == '{':
                 balancer.pop()
             else: return False
-    return True
+    return len(balancer) == 0
 
 test = '{a+b}[c*(x/y*{a-b})]'
 
