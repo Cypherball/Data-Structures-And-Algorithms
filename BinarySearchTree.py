@@ -104,7 +104,7 @@ class BinarySearchTree:
 
 
 # Tests
-bst = BinarySearchTree()
+bst = BinarySearchTree(50)
 bst.insert(bst.get_root(), 30)
 bst.insert(bst.get_root(), 20)
 bst.insert(bst.get_root(), 40)
